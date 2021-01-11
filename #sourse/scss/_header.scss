@@ -7,16 +7,18 @@
 
 	// .header-top__lang
 	&__lang {
-		font-family: Bebas;
+		@extend .Bebas;
 		font-size: 10px;
 		line-height: 25px;
 		font-weight: 400;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		color: #000;
-		text-decoration: underline;
 		// .header-top__lang_item
 		&_item {
+			text-decoration: underline;
+			display: inline-block;
+			margin: 0px 20px 0px 0px;
 			&.active {
 				color: #fff;
 				width: 20px;
@@ -28,7 +30,7 @@
 	}
 	// .header-top__link
 	&__link {
-		font-family: AkzidenzGrotesk-BoldCond;
+		@extend .Akzi;
 		font-size: 15px;
 		line-height: 25px;
 		font-weight: 400;
