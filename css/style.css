@@ -861,7 +861,7 @@ body.ie .ibg img {
 }
 @media (max-width: 750px) {
 	.header {
-		padding: 15px 0px 20px 0px;
+		padding: 5px 0px 5px 0px;
 	}
 }
 
@@ -924,6 +924,11 @@ body.ie .ibg img {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin: -10px 0px 0px 0px;
+}
+@media (max-width: 750px) {
+	.header-bottom {
+		margin: -12px 0px 0px 0px;
+	}
 }
 .header-bottom__column {
 	-webkit-box-flex: 0;
@@ -996,18 +1001,24 @@ body.ie .ibg img {
 		font-size: 8px;
 	}
 }
+@media (max-width: 479.98px) {
+	.header-logo__text {
+		font-size: 5px;
+	}
+}
 .header-logo__image {
 	display: inline-block;
 	margin: 13px 0px 22px 0px;
 }
 @media (max-width: 750px) {
 	.header-logo__image img {
-		max-width: 150px;
+		width: 150px;
 	}
 }
 @media (max-width: 479.98px) {
 	.header-logo__image img {
-		max-width: 100px;
+		width: 100px;
+		margin: 0px 0px 2px 0px;
 	}
 }
 @media (max-width: 750px) {

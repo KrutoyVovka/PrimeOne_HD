@@ -21,7 +21,7 @@ function adaptive_header(w,h) {
 			$('.header-bottom-menu').addClass('done').appendTo(headerMenu);
 		} 
 	}	else {
-		$.each($('.header-bottom-menu'), function (index,val) {
+		$.each($('.header-bottom-menu'), function (index, val) {
 			if ($(this).hasClass('.header-bottom-menu--right')){
 				if ($(this).hasClass('done')){
 					$(this).removeClass('done').prependTo($('.header-bottom__column').eq(2));
