@@ -16,9 +16,9 @@ if (isMobile.iOS()) {
 	var act = "touchstart";
 }
 
-let iconMenu = document.querySelector(".icon-menu");
+let iconMenu = document.querySelector(".header-menu__icon");
 let body = document.querySelector("body");
-let menuBody = document.querySelector(".menu__body");
+let menuBody = document.querySelector(".header-menu");
 if (iconMenu) {
 	iconMenu.addEventListener("click", function () {
 		iconMenu.classList.toggle("active");
