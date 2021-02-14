@@ -86,7 +86,7 @@ body {
 		max-width: 970px;
 	} */
 	@media (max-width: $md1+px) {
-		max-width: 767px;
+		max-width: 750px;
 	}
 	@media (max-width: $md2+px) {
 		max-width: none;
@@ -96,8 +96,8 @@ body {
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-//@import "_forms";
-//@import "_ui";
+@import "_forms";
+@import "_ui";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -118,5 +118,123 @@ body {
 // Шаблоны
 
 //====================================================================================================
+.content {
+}
+.private {
+	@include flexbox();
+	background: #000;
+	margin: 0px 0px 75px 0px;
+}
+.private__column {
+	flex: 0 0 50%;
+	@media (max-width: $md2+px) {
+		flex: 1 1 100%;
+		&:first-child {
+			display: none;
+		}
+	}
+}
+.private-image {
+	height: 100%;
+}
+.private-body {
+	padding: 75px 20px 75px 60px;
+	@media (max-width: $md1+px) {
+		padding: 30px 20px 30px 30px;
+	}
+}
+.private-body-container {
+	max-width: 305px;
+}
+.private-body__title {
+	font-family: "AkzidenzGrotesk";
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #ffffff;
+	margin: 0px 0px 30px 0px;
+	@media (max-width: $md1+px) {
+		font-size: 35px;
+		margin: 0px 0px 20px 0px;
+	}
+}
+.private-body__text {
+	font-size: 15px;
+	line-height: 25px;
+	color: #ffffff;
+	margin: 0px 0px 50px 0px;
+	@media (max-width: $md1+px) {
+		margin: 0px 0px 30px 0px;
+	}
+}
+.private-body-buttons {
+}
+.private-body-buttons__item {
+}
+.private-body-buttons__link {
+	font-family: Bebas;
+	font-size: 15px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 0px 15px;
+	color: #fffffe;
+}
+//====================================================================================================
 
+.products {
+}
+.products-body {
+	@include flexbox();
+}
+.products-column {
+	flex: 0 0 25%;
+}
+.products-item {
+	@include flexbox();
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+.products-item__image {
+	display: block;
+	//padding: 0px 0px 100% 0px;
+	margin: 0px 0px 25px 0px;
+}
+.products-item__body {
+	@include flexbox();
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0px 5px;
+}
+
+.products-item__title {
+	display: block;
+	font-family: "AkzidenzGrotesk";
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000;
+	margin: 0px 20px 35px 0px;
+}
+.products-item__text {
+	font-size: 15px;
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 25px;
+	margin: 0px 0px 30px 0px;
+	flex: 1 1 auto;
+}
+.products-item__btn {
+	margin: 0px 0px 30px 0px;
+}
+.products-item__link {
+	font-family: Bebas;
+	font-size: 15px;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
