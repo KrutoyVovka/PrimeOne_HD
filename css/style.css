@@ -1144,6 +1144,17 @@ body.ie .ibg img {
 		padding: 30px 20px 30px 30px;
 	}
 }
+@media (max-width: 767px) {
+	.private-body {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		font-size: 0;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
 
 .private-body-container {
 	max-width: 305px;
@@ -1182,8 +1193,12 @@ body.ie .ibg img {
 	text-decoration: underline;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	padding: 0px 15px;
+	margin: 0px 0px 0px 15px;
 	color: #fffffe;
+}
+
+.products {
+	margin: 0px 0px 40px 0px;
 }
 
 .products-body {
@@ -1192,11 +1207,25 @@ body.ie .ibg img {
 	display: flex;
 	font-size: 0;
 }
+@media (max-width: 767px) {
+	.products-body {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+}
 
 .products-column {
+	margin: 0px 0px 40px 0px;
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 25%;
 	        flex: 0 0 25%;
+}
+@media (max-width: 767px) {
+	.products-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 50%;
+		        flex: 0 0 50%;
+	}
 }
 
 .products-item {
@@ -1204,38 +1233,25 @@ body.ie .ibg img {
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 0;
+	height: 100%;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	height: 100%;
 }
 
 .products-item__image {
 	display: block;
+	padding: 0px 0px 100% 0px;
 	margin: 0px 0px 25px 0px;
-}
-
-.products-item__body {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 0;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	padding: 0px 5px;
 }
 
 .products-item__title {
 	display: block;
+	max-width: 185px;
+	height: 50px;
+	overflow: hidden;
+	padding: 0px 10px 0px 10px;
 	font-family: "AkzidenzGrotesk";
 	font-size: 25px;
 	text-transform: uppercase;
@@ -1245,6 +1261,8 @@ body.ie .ibg img {
 }
 
 .products-item__text {
+	max-width: 185px;
+	padding: 0px 10px 0px 10px;
 	font-size: 15px;
 	color: #000;
 	text-transform: uppercase;
@@ -1257,7 +1275,7 @@ body.ie .ibg img {
 }
 
 .products-item__btn {
-	margin: 0px 0px 30px 0px;
+	margin: 0px 10px 30px 10px;
 }
 
 .products-item__link {
@@ -1267,4 +1285,5 @@ body.ie .ibg img {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	color: #000000;
+	padding: 0px 10px 0px 10px;
 }
